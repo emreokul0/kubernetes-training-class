@@ -46,3 +46,34 @@
    ```bash
    kubectl get nodes
    ```
+
+   ![Kubectl With Minikube](./images/kubectl-with-minikube.png)
+
+6. **Minikube Profile Info Command:**
+
+   To get more detailed information about the cluster, you can use the `minikube profile` command to see the profile details.
+
+   ```bash
+   minikube profile
+   ```
+
+   ![Minikube Profile Info Result](./images/minikube-profile-info-result.png)
+
+   This command gives more details about the profile, including the driver in use.
+
+7. **Minikube Profile List Command:**
+
+   The `minikube profile list` command is used to display a list of all Minikube profiles that exist on your machine. A profile in Minikube represents a separate Kubernetes cluster, allowing you to manage multiple clusters with different configurations.
+
+   ```bash
+   minikube profile list
+   ```
+
+   ![Minikube Profile List Result](./images/minikube-profile-list-result.png)
+
+   This command provides a table that includes the following information for each profile:
+
+      - **Profile Name**: The name of the Minikube profile.
+      - **Status**: The current state of the profile (e.g., running, stopped).
+      - **Kubernetes Version**: The version of Kubernetes running in the profile.
+      - **Node Information**: The details of the nodes, such as driver and status.
